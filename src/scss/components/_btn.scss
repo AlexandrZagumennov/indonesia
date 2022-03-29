@@ -1,0 +1,57 @@
+.btn {
+	display: block;
+	max-width: 360px;
+	min-height: 76px;
+	background: $color-3;
+	color: $color-2;
+	border-radius: 12px;
+	text-align: center;
+	padding: 24px 0;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 150%;
+	transition: background-color .3s ease-in;
+
+	&:hover {
+		background-color: $color-3-hover;
+	}
+
+	&:focus {
+		background-color: #F3C858;
+		outline: 2px solid #C2900F;
+	}
+
+	&:active {
+		background-color: #D09600;
+	}
+}
+
+@media (max-width: 1200px) {
+	.btn {
+		max-width: 299px;
+		min-height: 63px;
+		border-radius: 10px;
+		padding: 18px 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.btn {
+		max-width: 220px;
+		min-height: 45px;
+		border-radius: 6px;
+		padding: 12px 0;
+		font-size: 14px;
+		line-height: 150%;
+	}
+}
+
+@media (max-width: 576px) {
+	.btn {
+		max-width: 151px;
+		min-height: 34px;
+		border-radius: 4px;
+		padding: 8px 0;
+		font-size: 12px;
+	}
+}

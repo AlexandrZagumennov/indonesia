@@ -1,0 +1,31 @@
+@font-face {
+	@include font (Nunito, 200)
+}
+
+@font-face {
+	@include font (Nunito, 300)
+}
+
+
+@font-face {
+	@include font (Nunito, 600)
+}
+
+@font-face {
+	@include font (Nunito, 700)
+}
+
+@font-face {
+	@include font (OpenSans, 200)
+}
+
+@font-face {
+	@include font (Merriweather, 400)
+}
+
+//@font-face {
+//    font-family: 'Nunito';
+//    src: local('Nunito ExtraLight Italic'), local('Nunito-ExtraLightItalic'), url('../fonts/Nunito/Nunito-200.woff2') format('woff2'), url('../fonts/Nunito/Nunito-200.woff') format('woff');
+//    font-weight: 200;
+//    font-style: italic;
+//}

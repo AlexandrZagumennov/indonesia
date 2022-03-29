@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Indonesia</title>
+
+	<!--<link rel="icon" type="image/svg+xml" href="img/favicon.png">-->
+
+	<link rel="preload" href="fonts/Nunito/Nunito-200.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Nunito/Nunito-300.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Nunito/Nunito-600.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Nunito/Nunito-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/OpenSans/OpenSans-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Merriweather/merriweather-400r.woff2" as="font" type="font/woff2" crossorigin>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const createLink = url => {
+				const link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.href = url;
+				document.head.append(link);
+			}
+			createLink('css/index.min.css');
+		})
+	</script>
+
+	<script defer src="js/index.min.js"></script>
+</head>
+<body>
+	<section class="hero">
+		<header class="header">
+			<div class="header__wrapper container">
+				<img src="img/hero/logo.svg" alt="Логотип туристического агетнста Indo Travel" class="header__logo" width="176" height="34">
+
+				<nav class="header__navigation navigation">
+					<ul class="navigation__list">
+						<li class="navigation__list-item"><a href="#" class="navigation__link">Индонезия</a></li>
+						<li class="navigation__list-item"><a href="#" class="navigation__link">Путешествие</a></li>
+						<li class="navigation__list-item"><a href="#" class="navigation__link">Тур 14 дней</a></li>
+						<li class="navigation__list-item"><a href="#" class="navigation__link">Почему мы?</a></li>
+						<li class="navigation__list-item"><a href="#" class="navigation__link">Фотоальбом</a></li>
+						<li class="navigation__list-item"><a href="#" class="navigation__link">Бронирование</a></li>
+						<li class="navigation__list-item"><a href="#" class="navigation__link">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<button class="header__burger burger">
+					<span class="burger__span"></span>
+				</button>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="hero__wrapper">
+				<h2 class="hero__subtitle">Открой для себя</h2>
+				<h1 class="hero__title">indonesia</h1> 
+
+				<div class="hero__description">
+					<p>Тур 14 дней, покажем все самое интересное. </p>
+					<p>Вы точно запомните этот отдых навсегда.</p>
+				</div>
+
+				<a href="" class="hero__btn btn">Забронировать</a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>	
