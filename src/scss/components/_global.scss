@@ -76,6 +76,29 @@ iframe {
 	margin: 0 auto;
 }
 
+.section {
+	&__title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 150%;
+	}
+
+	&__description {
+		font-family: $secondary-font-family;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 34px;
+		line-height: 150%;
+		letter-spacing: 0.02em;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 150%;
+	}
+}
+
 @media (max-width: 1200px) {
 	.container {
 		max-width: calc(940px + 2 * 20px);
