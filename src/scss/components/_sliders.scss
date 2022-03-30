@@ -1,0 +1,15 @@
+// Слайдер в секции INDONESIA
+.indonesia__slider-pagination .swiper-pagination-bullet {
+	width:4px;
+	height: 4px;
+	background-color: $color-2;
+	opacity: 1;
+}
+
+.indonesia__slider-pagination .swiper-pagination-bullet-active {
+	width: 12px;
+	height: 4px;
+	border-radius: 10px;
+	background-color: $color-3;
+}
+// Слайдер в секции INDONESIA / END

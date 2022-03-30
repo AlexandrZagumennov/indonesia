@@ -5,11 +5,16 @@
 @import 'components/global';
 @import 'components/fonts';
 
+/*Подключение стилей слайдеров */
+@import 'libs/swiper-bundle.min';
+@import 'components/sliders';
+
 /* Подключение стилей блоков */
 @import 'components/hero';
 @import 'components/header';
 @import 'components/navigation';
 @import 'components/burger';
 @import 'components/btn';
+@import 'components/indonesia';
 
- 
+
