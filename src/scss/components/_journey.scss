@@ -1,0 +1,183 @@
+.journey {
+	padding-bottom: 150px;
+	padding-top: 43px;
+}
+
+.journey__description {
+	max-width: 542px;
+}
+
+.journey__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.journey__acc-container {
+	width: 580px;
+}
+
+.journey__item {
+	width: 100%;
+
+	position: relative;
+
+	&:not(:last-child) {
+		padding-bottom: 38px;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		width: 2px;
+		height: 100%;
+		background-color: $color-3;
+		position: absolute;
+		left: 13px;
+		top: 0;
+	}
+
+	&:last-child::before {
+		height: 5px;
+	}
+
+	&_active {
+		&:last-child::before {
+			height: 100%
+		}
+	}
+}
+
+.journey__btn-title {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	text-align: left;
+	padding: 0 0 0 99px;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: $color-3;
+		position: absolute;
+		left: 5px;
+		top: 4px;
+	}
+
+	&_active {
+		margin-bottom: 17px;
+
+		&::before{
+			width: 30px;
+			height: 30px;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+.journey__item:first-child .journey__btn-title {
+	&::before {
+		top: 0;
+	}
+}
+
+//.journey__item:last-child {
+//	&::before {
+//		height: 5px;
+//	}
+//}
+
+
+.journey__btn-description {
+	height: 0;
+	overflow: hidden;
+	padding: 0 0 0 99px;
+	transition: height .3s ease-in;
+
+	&_active {
+		height: 215px;
+	}
+}
+
+.journey__text {
+	width: 100%;
+}
+
+.journey__ill {
+	width: 480px;
+	height: 410px;
+	@include bg-full('../img/journey/map.png');
+	margin-top: 59px;
+}
+
+
+@media (max-width: 1200px) {
+	.journey {
+		padding-bottom: 120px;
+		padding-top: 23px;
+	}
+
+	.journey__description {
+		max-width: 543px;
+	}
+
+	.journey__acc-container {
+		width: 540px;
+	}
+
+	.journey__ill {
+		width: 319px;
+		height: 268px;
+		margin-top: 130px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.journey {
+		padding-bottom: 90px;
+		padding-top: 31px;
+	}
+
+	.journey__description {
+		max-width:379px;
+	}
+
+	.journey__wrapper {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.journey__ill {
+		width: 380px;
+		height: 320px;
+		margin: 0 auto;
+	}
+
+	.journey__acc-container {
+		width: 620px;
+	}
+
+	.journey__item {
+		&:not(:last-child) {
+			padding-bottom: 40px;
+		}
+	}
+
+	.journey__btn-title {
+		font-size: 16px;
+		margin-bottom: 23px;
+	}
+
+	.journey__btn-description {
+		font-size: 14px;
+	}
+}
+
+
