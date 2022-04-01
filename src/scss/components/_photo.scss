@@ -1,0 +1,119 @@
+.photo {
+	padding: 47px 0;
+}
+
+.photo__description {
+	max-width: 580px;
+}
+
+.photo__slider {
+	width: 1440px;
+	height: 500px;
+	margin-left: -130px;
+}
+
+.photo__slide {
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	width: 1110px;
+	height: 500px;
+}
+
+.photo__img {
+	display: block;
+}
+
+.photo__slider-navigation {
+	margin: 0 auto;
+	max-width: 1180px;
+	height: 500px;
+	top: -50%;
+	transform: translateY(-50%);
+	position: relative;
+	z-index: 10;
+}
+
+.photo__slider-prev,
+.photo__slider-next  {
+	cursor: pointer;
+	width: 90px;
+	height: 90px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 1px solid $color-2;
+	outline: transparent;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 100;
+	display: none;
+	@include bg-full('../img/photo/arrow-white.png');
+	background-size: 35px 35px;
+	transition: all .3s ease-in;
+
+	&:hover {
+		background: {
+			color: $color-2;
+			image: url('../img/photo/arrow-black.png');
+			position: 45px center;
+		}
+	}
+	
+	&:focus {
+		background: {
+			color: rgba(249, 249, 249, 0.3);
+			image: url('../img/photo/arrow-white.png');
+			position: center center;
+		}
+	}
+
+	&:active {
+		background: {
+			color: $color-2;
+			image: url('../img/photo/arrow-black.png');
+			position: 45px center;
+		}
+		outline: 1px solid $color-3;
+	}
+}
+
+.photo__slider-prev {
+	left: 130px;
+	transform:translateY(-50%) rotate(180deg) ;
+}
+
+.photo__slider-next {
+	right: 130px;
+}
+
+.photo__slider-prev_active {
+	display: block;
+}
+
+.photo__slider-next_active {
+	display: block;
+}
+
+
+// Зоны, при наведении на которые отображаются элементы управления
+.photo__navigation-left,
+.photo__navigation-right {
+	display: block;
+	width: 400px;
+	height: 100%;
+	position: absolute;
+}
+
+.photo__navigation-left {
+	left: -130px;
+	top: 0;
+}
+
+.photo__navigation-right {
+	right: -130px;
+	top: 0;
+}
+// Зоны, при наведении на которые отображаются элементы управления |
