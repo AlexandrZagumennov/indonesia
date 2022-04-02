@@ -20,11 +20,18 @@ const swipers = () => {
 	});
 
 	const swiperPhoto = new Swiper('.photo__slider', {
-		slidesPerView: 1.25,
 		speed: 1000,
 		loop: true,
 		slideToClickedSlide: true,
-		spaceBetween: -59,
+		breakpoints: {
+			1000: {
+				slidesPerView: 1.31,
+			},
+			320: {
+				slidesPerView: 1,
+			},
+
+		},
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -33,6 +40,13 @@ const swipers = () => {
 			enabled: true,
 			onlyInViewport: false,
 		},
+		simulateTouch: true,
+		grabCursor: true,
+		lazy: {
+			loadOnTransitionStart: true,
+			loadPrevNext: true,
+		},
+
 	});
 
 	const swiperPhotoPrev = document.querySelector('.photo__slider-prev')
@@ -76,7 +90,5 @@ const swipers = () => {
 		}
 	});
 };
-
-
 
 export {swipers};
