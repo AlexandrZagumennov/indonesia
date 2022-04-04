@@ -44,3 +44,11 @@
 	height: 100%;
 	
 }
+
+
+@media (max-width: 576px) {
+	.social {
+		max-width: 180px;
+		gap: 10px;
+	}
+}
