@@ -33,7 +33,7 @@
 	<section class="hero">
 		<header class="header">
 			<div class="header__wrapper container">
-				<img src="img/sprite.svg#logo" alt="Логотип туристического агетнста Indo Travel" class="header__logo" width="176" height="34">
+				<img src="img/sprite.svg#logo" alt="Логотип туристического агетнста Indo Travel" class="header__logo logo" width="176" height="34">
 
 				<nav class="header__navigation navigation">
 					<ul class="navigation__list">
@@ -315,62 +315,77 @@
 					<h4 class="footer__title">Меню</h4>
 					<ul class="footer__list">
 						<li class="footer__item">
-							<a href="#" class="footer__link">Индонезия</a>
+							<a href="#" class="footer__link section__text">Индонезия</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link">Путешествие</a>
+							<a href="#" class="footer__link section__text">Путешествие</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link">Тур 14 дней</a>
+							<a href="#" class="footer__link section__text">Тур 14 дней</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link">Почему мы?</a>
+							<a href="#" class="footer__link section__text">Почему мы?</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link">Фотоальбом</a>
+							<a href="#" class="footer__link section__text">Фотоальбом</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link">Бронирование</a>
+							<a href="#" class="footer__link section__text">Бронирование</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link">Контакты</a>
+							<a href="#" class="footer__link section__text">Контакты</a>
 						</li>
 					</ul>
 				</div>
 
 				<div class="footer__contacts">
 					<h4 class="footer__title">Контакты</h4>
-					<a href="tel:+79378392361">Тел: +7 937 839 23-61</a>
-					<a href="mailto:IndoTravel@gmail.com">Email: IndoTravel@gmail.com</a>
+					<a href="tel:+79378392361" target="_blank" class="section__text footer__contacts-link footer__contacts-link_tel">Тел: +7 937 839 23-61</a>
+					<a href="mailto:IndoTravel@gmail.com" target="_blank" class="section__text footer__contacts-link footer__contacts-link_email">Email: IndoTravel@gmail.com</a>
 
 					<ul class="footer__social social">
-						<li class="social__item social__item_whatsapp"></li>
-						<li class="social__item social__item_instagram"></li>
-						<li class="social__item social__item_youtube"></li>
-						<li class="social__item social__item_facebook"></li>
-						<li class="social__item social__item_telegram"></li>
+						<li class="social__item social__item_whatsapp">
+							<a href="#" class="social__link" target="_blank" ></a>
+						</li>
+						<li class="social__item social__item_instagram">
+							<a href="#" class="social__link" target="_blank" ></a>
+						</li>
+						<li class="social__item social__item_youtube">
+							<a href="#" class="social__link" target="_blank" ></a>
+						</li>
+						<li class="social__item social__item_facebook">
+							<a href="#" class="social__link" target="_blank" ></a>
+						</li>
+						<li class="social__item social__item_telegram">
+							<a href="#" class="social__link" target="_blank" ></a>
+						</li>
 					</ul>
 				</div>
 
 				<form action="#" method="post" class="footer__form">
 					<h4 class="footer__title">Есть вопросы по туру?</h4>
 
-					<label for="footer-form" class="footer__label">Введите свой Email и мы свяжемся с вами в течении 3 рабочих дней</label>
-					<input type="email" name="user-email" id="footer-form" placeholder="Введите адрес электронной почты">
+					<label for="footer-form" class="footer__label section__text">Введите свой Email и мы свяжемся с вами в течении 3 рабочих дней</label>
 
-					<button type="submit" class="footer__btn btn"></button>
+					<div class="footer__input-wrapper">
+						<input type="email" name="user-email" id="footer-form" placeholder="Введите адрес электронной почты" class="footer__input">
+						<button type="submit" class="footer__btn btn"></button>
+					</div>
+
+			
 				</form>
 
-				<div class="footer__copywright">
-					<p class="footer__copywright-text">© Indo Travel, 2022</p>
+				<p class="footer__copywright-text footer__copywright-text_copy">© Indo Travel, 2022</p>
+				
+				<div class="footer__copywright-person">
 					<p class="footer__copywright-text">Design by Anastasia Ilina</p>
-					<a href="https://tele.click/@Mrshmallowww" class="footer__copywright-link">Tg: @Mrshmallowww</a>
+					<a href="https://tele.click/@Mrshmallowww" target="_blank"  class="footer__copywright-link">Tg: @Mrshmallowww</a>
 				</div>
 			</div>
 		</div>

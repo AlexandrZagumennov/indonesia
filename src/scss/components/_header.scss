@@ -12,11 +12,6 @@
 	.header {
 		padding: 38px 0 45px;
 	}
-
-	.header__logo {
-		width: 140px;
-		height: 27px;
-	}
 }
 
 @media (max-width: 1000px) {
@@ -28,10 +23,5 @@
 @media (max-width: 576px) {
 	.header {
 		padding: 20px 0 23px;
-	}
-
-	.header__logo {
-		width: 104px;
-		height: 20px;
 	}
 }
