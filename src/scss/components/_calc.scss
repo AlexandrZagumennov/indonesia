@@ -1,0 +1,112 @@
+.calc {
+	padding-top: 100px;
+	color: $color-2;
+
+	//background: {
+	//	image: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+	//		url("../img/calc/calc-bg.jpg");
+	//		position: center;
+	//		size: cover;
+	//		repeat: no-repeat;
+	//}
+
+	//background-image: -webkit-image-set(
+	//		linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+	//		url("../img/calc/calc-bg.avif") 1x,
+	//		linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+	//		url("../img/calc/calc-bg.webp") 1x
+	//);
+	//background-image: image-set(
+	//		linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+	//		url("../img/calc/calc-bg.avif") 1x,
+	//		linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+	//		url("../img/calc/calc-bg.webp") 1x
+	//);
+
+	background-color: black;
+
+	color: $color-2;
+}
+
+.calc__description {
+	max-width: 580px;
+}
+
+.calc__text {
+	width: 409px;
+	margin-bottom: 80px;
+}
+
+.calc__wrapper {
+	padding: 68px 60px;
+	background: rgba(230, 205, 173, 0.3);
+	backdrop-filter: blur(10px);
+	border-radius: 30px 30px 0px 0px;
+}
+
+.calc__container {
+	background: rgba(33, 25, 25, 0.78);
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 38px 20px 38px;
+}
+
+.calc__list {
+	display: flex;
+	align-items: center;
+	gap: 64px;
+	padding-top: 5px;
+}
+
+.calc__item {
+	width: 190px;
+	min-height: 87px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.calc__item-wrapper {
+
+}
+
+.calc__item-title {
+	margin: 0 0 12px
+}
+
+.calc__item-value {
+	display: block;
+	max-width: 140px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 130%;
+	opacity: 0.7;
+}
+
+.calc__item-btn {
+	width: 14px;
+	height: 14px;
+	border:none;
+	background: {
+		color: transparent;
+		image: url('../img/sprite.svg#calc-btn-arrow');
+		repeat: no-repeat;
+		position: center;
+		size: cover;
+	}
+	transition: transform .3s ease-in;
+
+	&:hover{
+		transform: translateY(5px)
+	}
+}	
+
+
+
+
+.calc__btn {
+	width: 219px;
+	height: 67px;
+}
