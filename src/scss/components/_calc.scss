@@ -42,6 +42,8 @@
 	background: rgba(230, 205, 173, 0.3);
 	backdrop-filter: blur(10px);
 	border-radius: 30px 30px 0px 0px;
+
+	position: relative;
 }
 
 .calc__container {
@@ -79,6 +81,7 @@
 .calc__item-value {
 	display: block;
 	max-width: 140px;
+	min-height: 42px;
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 130%;
@@ -104,9 +107,181 @@
 }	
 
 
-
-
 .calc__btn {
 	width: 219px;
 	height: 67px;
 }
+
+.calc__date-list {
+	display: none;
+}
+
+.calc__date-list_active {
+	display: block;
+	position: absolute;
+	top: 226px;
+	left: 0;
+	width: 282px;
+	padding: 20px;
+	background-color: $color-2;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+	color: $color-1;
+}
+
+.calc__select-title {
+	display: block;
+	margin: 0 auto 20px;
+	max-width: 160px;
+}
+
+.calc__select-btn {
+	font-size: 14px;
+	line-height: 130%;
+	width: 106px;
+	min-height: 38px;
+	border-radius: 8px;
+	padding: 10px 0;
+	margin-left: auto;
+}
+
+.calc__date-list-wrapper {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.calc__date-mounths-list {
+	width: 133px;
+	//border-right: 1px solid #c0c0c0;
+	padding-top: 9px;
+	padding-bottom: 16px;
+	//padding-right: 20px;
+	margin-bottom: 20px;
+
+	text-align: center;
+
+	position: relative;
+
+	&::after {
+		display: block;
+		content: '';
+		width: 1px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 133px;
+		background-color: #C0C0C0;
+	}
+
+}
+
+.calc__date-mounths-item {
+	margin-bottom: 11px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.calc__date-mounths-title {
+	cursor: pointer;
+	transition: all .3s ease-in;
+
+	
+	//&:focus,
+	//&:active
+	&:hover {
+		color:$color-3;
+		font-size: 16px;
+		margin-bottom: 21px;
+	}
+
+	border: none;
+	outline: none;
+
+	background-color: transparent;
+	display: block;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 130%;
+	color: #C0C0C0;
+}
+
+.calc__date-mounths-title_active {
+	color:$color-3;
+	font-size: 16px;
+	margin-bottom: 21px;
+}
+
+.calc__date-dates-list {
+	min-height: 147px;
+	padding-top: 39px;
+	padding-bottom: 54px;
+
+	//padding: 39px 20px 54px;
+}
+
+.calc__date-dates-item {
+	display: none;
+}
+
+.calc__date-dates-item_active {
+	display: block;
+	font-size: 14px;
+	line-height: 130%;
+	font-weight: 700;
+	margin-bottom: 25px;
+	cursor: pointer;
+
+	transition: color .3s ease-in;
+
+	&:hover{
+		color:$color-3-hover
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.calc__number-of-person-list {
+	display: none;
+}
+
+.calc__number-of-person-list_active {
+	display: block;
+	position: absolute;
+	top: 226px;
+	left: 415px;
+	width: 49px;
+	padding: 20px 0;
+	background-color: $color-2;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+	color: $color-1;
+}
+
+.calc__number-of-person-item {
+	cursor: pointer;
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 130%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	transition: color .3s ease-in;
+
+	&:focus,
+	&:active,
+	&:hover {
+		color:$color-3;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+//! Обрати внимание на стилизацию ховеров и экивов!
