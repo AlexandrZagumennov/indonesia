@@ -2,30 +2,26 @@
 	padding-top: 100px;
 	color: $color-2;
 
-	//background: {
-	//	image: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
-	//		url("../img/calc/calc-bg.jpg");
-	//		position: center;
-	//		size: cover;
-	//		repeat: no-repeat;
-	//}
+	background: {
+		image: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+			url("../img/calc/calc-bg.jpg");
+			position: center;
+			size: cover;
+			repeat: no-repeat;
+	}
 
-	//background-image: -webkit-image-set(
-	//		linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
-	//		url("../img/calc/calc-bg.avif") 1x,
-	//		linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
-	//		url("../img/calc/calc-bg.webp") 1x
-	//);
-	//background-image: image-set(
-	//		linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
-	//		url("../img/calc/calc-bg.avif") 1x,
-	//		linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
-	//		url("../img/calc/calc-bg.webp") 1x
-	//);
-
-	background-color: black;
-
-	color: $color-2;
+	background-image: -webkit-image-set(
+			linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+			url("../img/calc/calc-bg.avif") 1x,
+			linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+			url("../img/calc/calc-bg.webp") 1x
+	);
+	background-image: image-set(
+			linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+			url("../img/calc/calc-bg.avif") 1x,
+			linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 100%),
+			url("../img/calc/calc-bg.webp") 1x
+	);
 }
 
 .calc__description {
@@ -42,7 +38,6 @@
 	background: rgba(230, 205, 173, 0.3);
 	backdrop-filter: blur(10px);
 	border-radius: 30px 30px 0px 0px;
-
 	position: relative;
 }
 
@@ -64,14 +59,9 @@
 .calc__item {
 	width: 190px;
 	min-height: 87px;
-
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
-
-.calc__item-wrapper {
-
 }
 
 .calc__item-title {
@@ -88,24 +78,47 @@
 	opacity: 0.7;
 }
 
+.calc__item-value_checked {
+	white-space: nowrap; /* Запрещаем перенос строк */
+	overflow: hidden; /* Обрезаем все, что не помещается в область */
+	text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
 .calc__item-btn {
-	width: 14px;
-	height: 14px;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
 	border:none;
 	background: {
 		color: transparent;
-		image: url('../img/sprite.svg#calc-btn-arrow');
+		image: url('../img/calc/arrow-down.png');
 		repeat: no-repeat;
 		position: center;
-		size: cover;
+		size: 14px 14px;
 	}
-	transition: transform .3s ease-in;
+	transition: background-color .3s ease-in, background-image .3s ease-in;
 
 	&:hover{
-		transform: translateY(5px)
+		background: {
+			color: $color-2;
+			image: url('../img/calc/arrow-down-colored.png');
+		}
+	}
+
+	&:focus{
+		background: {
+			color: transparent;
+			image: url('../img/calc/arrow-down-colored.png');
+		}
+	}
+
+	&:active{
+		background: {
+			color: transparent;
+			image: url('../img/calc/arrow-down-colored.png');
+		}
 	}
 }	
-
 
 .calc__btn {
 	width: 219px;
@@ -152,14 +165,10 @@
 
 .calc__date-mounths-list {
 	width: 133px;
-	//border-right: 1px solid #c0c0c0;
 	padding-top: 9px;
 	padding-bottom: 16px;
-	//padding-right: 20px;
 	margin-bottom: 20px;
-
 	text-align: center;
-
 	position: relative;
 
 	&::after {
@@ -172,7 +181,6 @@
 		left: 133px;
 		background-color: #C0C0C0;
 	}
-
 }
 
 .calc__date-mounths-item {
@@ -185,20 +193,20 @@
 
 .calc__date-mounths-title {
 	cursor: pointer;
-	transition: all .3s ease-in;
+	transition: font-size .3s ease-in, color .3s ease-in;
 
-	
-	//&:focus,
-	//&:active
-	&:hover {
-		color:$color-3;
+	&:hover,
+	&:focus {
 		font-size: 16px;
-		margin-bottom: 21px;
+	}
+
+	&:active {
+		font-size: 16px;
+		color: $color-3;
 	}
 
 	border: none;
 	outline: none;
-
 	background-color: transparent;
 	display: block;
 	font-weight: 700;
@@ -210,15 +218,12 @@
 .calc__date-mounths-title_active {
 	color:$color-3;
 	font-size: 16px;
-	margin-bottom: 21px;
 }
 
 .calc__date-dates-list {
 	min-height: 147px;
 	padding-top: 39px;
 	padding-bottom: 54px;
-
-	//padding: 39px 20px 54px;
 }
 
 .calc__date-dates-item {
@@ -233,10 +238,16 @@
 	margin-bottom: 25px;
 	cursor: pointer;
 
-	transition: color .3s ease-in;
+	transition: color .3s ease-in, font-size .3s ease-in;
 
-	&:hover{
-		color:$color-3-hover
+	&:hover,
+	&:focus {
+		font-size: 16px;
+	}
+
+	&:active {
+		font-size: 16px;
+		color: $color-3;
 	}
 
 	&:last-child {
@@ -271,12 +282,16 @@
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 15px;
-	transition: color .3s ease-in;
+	transition: color .3s ease-in, font-size .3s ease-in;
 
-	&:focus,
-	&:active,
-	&:hover {
-		color:$color-3;
+	&:hover,
+	&:focus {
+		font-size: 18px;
+	}
+
+	&:active {
+		font-size: 18px;
+		color: $color-3;
 	}
 
 	&:last-child {
@@ -284,4 +299,249 @@
 	}
 }
 
-//! Обрати внимание на стилизацию ховеров и экивов!
+.calc__options-list {
+	display: none;
+}
+
+.calc__options-list_active {
+	display: block;
+	position: absolute;
+	top: 219px;
+	left: 585px;
+	width: 282px;
+	padding: 20px;
+	background-color: $color-2;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+	color: $color-1;
+}
+
+.calc__date-options-list {
+	margin-bottom: 20px;
+}
+
+.calc__date-options-item {
+	cursor: pointer;
+	margin-bottom: 27px;
+	min-height: 16px;
+	position: relative;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.calc__date-options-input {
+	cursor: pointer;
+	display: block;
+	min-height: 16px;
+	width: 180px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 16px;
+		height: 16px;
+		border: 1px solid $color-1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: border .3s ease-in;
+	}
+
+	&:hover:before {
+		border: 1px solid $color-3;
+	}
+
+	&:focus:before {
+		border: 1px solid $color-3-focus;
+	}
+
+	&:active:before {
+		border: 1px solid $color-3;
+	}
+
+	&:checked:before {
+		border: 1px solid $color-3;
+		background: {
+			image: url("../img/calc/check-mark-button.png");
+			position: center;
+			size: 10px 10px;
+			repeat: no-repeat;
+		};
+	}
+}
+
+.calc__date-options-label {
+	display: block;
+	min-height: 16px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 130%;
+	padding-left: 36px;
+	width: 180px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (max-width: 1200px) {
+	.calc {
+		padding-top: 80px;
+	}
+
+	.calc__text {
+		margin-bottom: 83px;
+	}
+
+	.calc__wrapper {
+		padding: 50px 60px;
+	}
+
+	.calc__container {
+		align-items: center;
+		padding: 23px 20px 20px 20px;
+	}
+
+	.calc__list {
+		gap: 5px;
+		padding-top: 0;
+	}
+
+	.calc__item {
+		width: 160px;
+	}
+
+	.calc__btn {
+		width: 189px;
+		height: 52px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.calc {
+		padding-top: 0;
+	}
+
+	.calc__main-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.calc__content-wrapper {
+		padding-top: 40px;
+	}
+
+	.calc__description {
+		max-width: 380px;
+	}
+
+	.calc__text {
+		max-width: 320px;
+	}
+
+	.calc__wrapper {
+		width: 300px;
+		padding: 30px;
+		border-radius: 12px 12px 0px 0px;
+	}
+
+	.calc__container {
+		flex-direction: column;
+	}
+
+	.calc__list {
+		flex-direction: column;
+		gap: 30px;
+		margin-bottom: 30px;
+	}
+
+	.calc__btn {
+		width: 170px;
+		height: 42px;
+	}
+
+	.calc__item-title,
+	.calc__item-value {
+		font-size: 14px;
+	}
+
+	.calc__date-list_active {
+		top: 165px;
+	}
+
+	.calc__number-of-person-list_active {
+		top: 240px;
+		left: 125px;
+	}
+
+	.calc__options-list_active {
+		top: 380px;
+		left: 10px;
+	}
+}
+
+@media (max-width: 738px) {
+	.calc__content-wrapper {
+		padding-top: 20px;
+	}
+
+	.calc__main-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.calc__wrapper {
+		padding: 25px;
+	}
+
+	.calc__text {
+		margin-bottom: 25px;
+	}
+
+	.calc__item-title,
+	.calc__item-value {
+		font-size: 12px;
+	}
+
+	.calc__btn {
+		width: 132px;
+		height: 34px;
+	}
+
+	.calc__list {
+		gap: 25px;
+		margin-bottom: 25px;
+	}
+
+	.calc__item {
+		min-height: 67px;
+	}
+
+	.calc__date-list_active {
+		top: 120px;
+	}
+
+	.calc__number-of-person-list_active {
+		top: 200px;
+	}
+
+	.calc__options-list_active {
+		top: 300px;
+	}
+}
+
+@media (max-width: 576px) {
+	.calc__main-container,
+	.calc__content-wrapper,
+	.calc__wrapper,
+	.calc__text {
+		max-width: 270px;
+	}
+}
+
+
+
+
