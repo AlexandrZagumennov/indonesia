@@ -1,0 +1,19 @@
+.booking {
+	padding-bottom: 150px;
+
+	@media (max-width: 1200px) {
+		padding-bottom: 120px;
+	}
+
+	@media (max-width: 1000px) {
+		padding-bottom: 102px;
+	}
+
+	@media (max-width: 738px) {
+		padding-bottom: 50px;
+	}
+}
+
+.booking__form {
+	margin: 0 auto;
+}

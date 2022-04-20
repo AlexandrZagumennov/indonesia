@@ -1,0 +1,160 @@
+.form {
+	max-width: 980px;
+	border: 1px solid $color-4;
+	border-radius: 30px;
+	padding: 60px 100px;
+}
+
+.form__title {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 0.02em;
+	margin-bottom: 60px;
+}
+
+.form__container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+
+.form__selects-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__selects-item {
+	display: block;
+	width: 221px;
+	min-height: 99px;
+}
+
+.form__fieldset {
+	border: 1px solid $color-4;
+	border-radius: 12px;
+	padding: 12px 15px;
+	cursor: pointer;
+}
+
+
+
+.form__label {
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	margin-bottom: 12px;
+}
+
+.form__input {
+	display: block;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 130%;
+	color: $color-4;
+	opacity: 0.7;
+	border: none;
+	outline: none;
+	width: 100%;
+	cursor: pointer;
+}
+
+.form__input_select {
+	max-width: 140px;
+	min-height: 42px;
+}
+
+.form__fieldset_date {
+	position: relative;
+}
+
+.form__fieldset_person {
+	position: relative;
+}
+.form__fieldset_options {
+	position: relative;
+}
+.form__personal-data-container {
+}
+
+.fieldset__full-name {
+	margin-bottom: 30px;
+	min-height: 99px;
+}
+
+.form__communication-container {
+	display: flex;
+	justify-content: space-between; 
+}
+
+.fieldset__email,
+.fieldset__phone {
+	width: 360px;
+	min-height: 99px;
+}
+
+.fieldset__email {
+}
+.fieldset__phone {
+}
+
+
+.form__booking-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__booking-data-container {
+}
+
+.form__booking-data-value {
+	margin-bottom: 10px;
+}
+
+.form__booking-price {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+}
+
+
+.form__btn {
+	width: 360px;
+}
+
+.form__arrow-btn {
+	padding: 0;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border:none;
+	background: {
+		color: transparent;
+		image: url('../img/form/arrow-down.png');
+		repeat: no-repeat;
+		position: center;
+		size: 14px 14px;
+	}
+}
+
+#form-arrow-btn-date,
+#form-arrow-btn-person,
+#form-arrow-btn-options {
+	position: absolute;
+	top:35px;
+	right: 16px;
+}
+
+.form__select {
+
+}
+
+.form__option {
+
+}
+

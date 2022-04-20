@@ -132,6 +132,7 @@
 .calc__date-list_active {
 	display: block;
 	position: absolute;
+	z-index: 100;
 	top: 226px;
 	left: 0;
 	width: 282px;

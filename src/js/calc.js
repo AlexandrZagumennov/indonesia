@@ -79,7 +79,7 @@ const calc = () => {
 	// Исходные данные / END
 
 	const date = document.querySelector('.calc__date-list ');
-	const mounthsList = document.querySelector('.calc__date-mounths-list');
+	const mounthsList = document.querySelectorAll('.calc__date-mounths-list');
 	const datesList = document.querySelector('.calc__date-dates-list');
 	const dateValue = document.querySelector('#date-value');
 	const personValue = document.querySelector('#person-value');
@@ -103,7 +103,9 @@ const calc = () => {
 			mounthBtn.textContent = mounthText;
 
 			mounthItem.append(mounthBtn);
-			mounthsList.append(mounthItem);
+			mounthsList.forEach(item => {
+				item.append(mounthItem);
+			})
 		};
 
 	// Функция создания элементов списка дат
@@ -402,6 +404,32 @@ const calc = () => {
 				totalCostBtn.innerHTML = `${resultTotalCost.toLocaleString()} P`;
 			} 	
 		});
+
+
+	/* Калькулятор в форме ОС */
+	const formArrowBtn = document.querySelectorAll('.form__arrow-btn');
+	const dateListForm = document.querySelector('.form__date-list');
+
+	
+	// Функция открытия списка дат
+	
+	formArrowBtn.forEach(btn => {
+
+		btn.addEventListener('click', (event) => {
+			event.preventDefault();
+
+			if (event.target.id === 'form-arrow-btn-date') {
+				console.log('form-arrow-btn-date')
+				dateListForm.classList.add('form__date-list_active');
+			} else if (event.target.id === 'form-arrow-btn-person') {
+				console.log('form-arrow-btn-person')
+			} else if (event.target.id === 'form-arrow-btn-options') {
+				console.log('form-arrow-btn-options')
+			}
+		})
+	})
+
+
 };
 
 export {calc};

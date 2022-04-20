@@ -5,9 +5,11 @@
 @import 'components/global';
 @import 'components/fonts';
 
-/*Подключение стилей слайдеров */
+/*Подключение стилей плагинов */
 @import 'libs/swiper-bundle.min';
+@import 'libs/choices.min';
 @import 'components/sliders';
+@import 'components/choices';
 
 /* Подключение стилей блоков */
 @import 'components/logo';

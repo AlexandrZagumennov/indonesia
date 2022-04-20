@@ -397,21 +397,38 @@
 							<li class="form__selects-item">
 								<fieldset class="form__fieldset form__fieldset_date">
 									<label for="form-input-date" class="form__label">Дата</label>
-									<input type="text" id="form-input-date" placeholder="Выбери дату путешествия">
+									<select name="form-date" id="form-date" class="form__select">
+										<option value="4.03 - 18.03" class="form__option">4.03 - 18.03</option>
+										<option value="7.03 - 21.03" class="form__option">7.03 - 21.03</option>
+										<option value="12.03 - 26.03" class="form__option">12.03 - 26.03</option>
+										<option value="20.03 - 6.04" class="form__option">20.03 - 6.04</option>
+										<option value="4.04 - 18.04" class="form__option">4.04 - 18.04</option>
+										<option value="7.04 - 21.04" class="form__option">7.04 - 21.04</option>
+										<option value="12.04 - 26.04" class="form__option">12.04 - 26.04</option>
+										<option value="20.04 - 6.05" class="form__option">20.04 - 6.05</option>
+										<option value="4.05 - 18.05" class="form__option">4.05 - 18.05</option>
+										<option value="7.05 - 21.05" class="form__option">7.05 - 21.05</option>
+										<option value="12.05 - 26.05" class="form__option">12.05 - 26.05</option>
+										<option value="20.05 - 6.05" class="form__option">20.05 - 6.06</option>
+									</select>
 								</fieldset>
 							</li>
 
 							<li class="form__selects-item">
 								<fieldset class="form__fieldset form__fieldset_person">
 									<label for="form-input-number-of-person" class="form__label">Люди</label>
-									<input type="text" id="form-input-number-of-person" placeholder="Укажи количество человек">
+									<input type="text" id="form-input-number-of-person" class="form__input form__input_select">
+
+									<button class="form__arrow-btn" id="form-arrow-btn-person"></button>
 								</fieldset>
 							</li>
 
 							<li class="form__selects-item">
 								<fieldset class="form__fieldset form__fieldset_options">
 									<label for="form-input-date" class="form__label">Опции</label>
-									<input type="text" id="form-input-options" placeholder="Выбери нужные опции">
+									<input type="text" id="form-input-options" class="form__input form__input_select">
+								
+									<button class="form__arrow-btn" id="form-arrow-btn-options"></button>
 								</fieldset>
 							</li>
 						</ul>
@@ -419,18 +436,18 @@
 						<div class="form__personal-data-container">
 							<fieldset class="form__fieldset fieldset__full-name">
 								<label for="form-input-full-name" class="form__label">ФИО</label>
-								<input type="text" id="form-input-full-name" placeholder="Введите Ваше ФИО">
+								<input type="text" id="form-input-full-name" class="form__input" placeholder="Введите Ваше ФИО">
 							</fieldset>
 
 							<div class="form__communication-container">
 								<fieldset class="form__fieldset fieldset__email">
 									<label for="form-input-email" class="form__label">Email</label>
-									<input type="text" id="form-input-email" placeholder="Введите адрес электронной почты">
+									<input type="email" id="form-input-email" class="form__input" placeholder="Введите адрес электронной почты">
 								</fieldset>
 
 								<fieldset class="form__fieldset fieldset__phone">
 									<label for="form-input-phone" class="form__label">Телефон</label>
-									<input type="text" id="form-input-phone" placeholder="Введите номер телефона">
+									<input type="tel" id="form-input-phone" class="form__input" placeholder="Введите номер телефона">
 								</fieldset>
 							</div>
 						</div>
@@ -438,7 +455,7 @@
 						<div class="form__booking-container">
 							<div class="form__booking-data-container">
 								<p class="form__booking-data-value">
-									<span id="form-booking-date">24 ноября - 7 декабря</span>
+									<span id="form-booking-date">24 ноября - 7 декабря</span>,
 									<span id="form-booking-person">4 человека</span>
 								</p>
 
@@ -447,6 +464,8 @@
 
 							<button class="btn form__btn">Забронировать</button>
 						</div>
+
+
 					</div>
 				</form>
 			</div>
