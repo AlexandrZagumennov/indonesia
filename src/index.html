@@ -327,49 +327,49 @@
 					<ul class="photo__slider-list swiper-wrapper">
 						<li class="photo__slide swiper-slide">
 							<picture>
-								<source srcset = "img/phoho/photo-1.avif" type="image/avif">
-								<source srcset = "img/phoho/photo-1.webp" type="image/webp">
-								<img src="img/phoho/photo-1.jpg" alt="фото скалистого острова" class="photo__img" width="1110" height="500">
+								<source srcset = "img/photo/photo-1.avif" type="image/avif">
+								<source srcset = "img/photo/photo-1.webp" type="image/webp">
+								<img src="img/photo/photo-1.jpg" alt="фото скалистого острова" class="photo__img" width="1110" height="500">
 							</picture>
 						</li>
 
 						<li class="photo__slide swiper-slide">
 							<picture>
-								<source srcset = "img/phoho/photo-2.avif" type="image/avif">
-								<source srcset = "img/phoho/photo-2.webp" type="image/webp">
-								<img src="img/phoho/photo-2.jpg" alt="фото гор, поросших травой и окутанных туманом" class="photo__img" width="1110" height="500">
+								<source srcset = "img/photo/photo-2.avif" type="image/avif">
+								<source srcset = "img/photo/photo-2.webp" type="image/webp">
+								<img src="img/photo/photo-2.jpg" alt="фото гор, поросших травой и окутанных туманом" class="photo__img" width="1110" height="500">
 							</picture>
 						</li>
 
 						<li class="photo__slide swiper-slide">
 							<picture>
-								<source srcset = "img/phoho/photo-3.avif" type="image/avif">
-								<source srcset = "img/phoho/photo-3.webp" type="image/webp">
-								<img  src="img/phoho/photo-3.jpg" alt="фото бухты, окаймлённой поросшими лестом скалами, и лодок" class="photo__img" width="1110" height="500">
+								<source srcset = "img/photo/photo-3.avif" type="image/avif">
+								<source srcset = "img/photo/photo-3.webp" type="image/webp">
+								<img  src="img/photo/photo-3.jpg" alt="фото бухты, окаймлённой поросшими лестом скалами, и лодок" class="photo__img" width="1110" height="500">
 							</picture>
 						</li>
 
 						<li class="photo__slide swiper-slide">
 							<picture>
-								<source srcset = "img/phoho/photo-4.avif" type="image/avif">
-								<source srcset = "img/phoho/photo-4.webp" type="image/webp">
-								<img  src="img/phoho/photo-4.jpg" alt="фото заката на побережье" class="photo__img" width="1110" height="500">
+								<source srcset = "img/photo/photo-4.avif" type="image/avif">
+								<source srcset = "img/photo/photo-4.webp" type="image/webp">
+								<img  src="img/photo/photo-4.jpg" alt="фото заката на побережье" class="photo__img" width="1110" height="500">
 							</picture>
 						</li>
 
 						<li class="photo__slide swiper-slide">
 							<picture>
-								<source srcset = "img/phoho/photo-5.avif" type="image/avif">
-								<source srcset = "img/phoho/photo-5.webp" type="image/webp">
-								<img  src="img/phoho/photo-5.jpg" alt="фото прибоя" class="photo__img" width="1110" height="500">
+								<source srcset = "img/photo/photo-5.avif" type="image/avif">
+								<source srcset = "img/photo/photo-5.webp" type="image/webp">
+								<img  src="img/photo/photo-5.jpg" alt="фото прибоя" class="photo__img" width="1110" height="500">
 							</picture>
 						</li>
 
 						<li class="photo__slide swiper-slide">
 							<picture>
-								<source srcset = "img/phoho/photo-6.avif" type="image/avif">
-								<source srcset = "img/phoho/photo-6.webp" type="image/webp">
-								<img  src="img/phoho/photo-6.jpg" alt="фото острова, поросшего пальмами и окружённого лазуревой морской водой" class="photo__img" width="1110" height="500">
+								<source srcset = "img/photo/photo-6.avif" type="image/avif">
+								<source srcset = "img/photo/photo-6.webp" type="image/webp">
+								<img  src="img/photo/photo-6.jpg" alt="фото острова, поросшего пальмами и окружённого лазуревой морской водой" class="photo__img" width="1110" height="500">
 							</picture>
 						</li>
 					</ul>
@@ -385,6 +385,71 @@
 					</div>
 
 				</div>
+		</section>
+
+		<section class="booking">
+			<div class="container">
+				<form action="#" class="booking__form form">
+					<h3 class="form__title">Бронирование тура</h3>
+
+					<div class="form__container">
+						<ul class="form__selects-container">
+							<li class="form__selects-item">
+								<fieldset class="form__fieldset form__fieldset_date">
+									<label for="form-input-date" class="form__label">Дата</label>
+									<input type="text" id="form-input-date" placeholder="Выбери дату путешествия">
+								</fieldset>
+							</li>
+
+							<li class="form__selects-item">
+								<fieldset class="form__fieldset form__fieldset_person">
+									<label for="form-input-number-of-person" class="form__label">Люди</label>
+									<input type="text" id="form-input-number-of-person" placeholder="Укажи количество человек">
+								</fieldset>
+							</li>
+
+							<li class="form__selects-item">
+								<fieldset class="form__fieldset form__fieldset_options">
+									<label for="form-input-date" class="form__label">Опции</label>
+									<input type="text" id="form-input-options" placeholder="Выбери нужные опции">
+								</fieldset>
+							</li>
+						</ul>
+
+						<div class="form__personal-data-container">
+							<fieldset class="form__fieldset fieldset__full-name">
+								<label for="form-input-full-name" class="form__label">ФИО</label>
+								<input type="text" id="form-input-full-name" placeholder="Введите Ваше ФИО">
+							</fieldset>
+
+							<div class="form__communication-container">
+								<fieldset class="form__fieldset fieldset__email">
+									<label for="form-input-email" class="form__label">Email</label>
+									<input type="text" id="form-input-email" placeholder="Введите адрес электронной почты">
+								</fieldset>
+
+								<fieldset class="form__fieldset fieldset__phone">
+									<label for="form-input-phone" class="form__label">Телефон</label>
+									<input type="text" id="form-input-phone" placeholder="Введите номер телефона">
+								</fieldset>
+							</div>
+						</div>
+
+						<div class="form__booking-container">
+							<div class="form__booking-data-container">
+								<p class="form__booking-data-value">
+									<span id="form-booking-date">24 ноября - 7 декабря</span>
+									<span id="form-booking-person">4 человека</span>
+								</p>
+
+								<p class="form__booking-price">459 590₽</p>
+							</div>
+
+							<button class="btn form__btn">Забронировать</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</section>
 	</main>
 
