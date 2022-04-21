@@ -1,5 +1,5 @@
 .choices {
-	max-width: 800px;
+	//max-width: 800px;
 	//height: 90px;
 }
 
@@ -23,6 +23,7 @@
 	border: none;
 	background-color: transparent;
 	outline: none;
+	padding:0;
 }
 
 .is-open .choices__inner {
@@ -42,6 +43,7 @@
 	border-bottom-right-radius: 20px;
 	border: none;
 	transition: color .3s ease-in;
+	padding-left: 12px;
 }
 
 .is-open .choices__list--dropdown .is-highlighted {
@@ -71,9 +73,7 @@
 		position: center;
 		size: 14px 14px;
 	}
-
 }
-
 
 .choices__list--dropdown .choices__item {  
 	font-size: 16px;
@@ -85,5 +85,47 @@
 .choices__list--dropdown {
 	margin-top: -5px;
 	z-index: 10;
+}
 
+.choices[data-type*=select-one] .choices__inner {
+	padding-bottom: 0;
+}
+
+.choices__list--single {
+	padding: 0 16px 0 4px;
+}
+
+/* Удаление из выпадающего списка Названия */
+.choices__list--dropdown .choices__item:first-child {
+	display: none;
+}
+/* Удаление из выпадающего списка Названия END*/
+
+@media (max-width: 1000px) {
+	.is-open .choices__list--dropdown {
+		padding-left: 10px;
+		padding-top: 12px;;
+	}
+
+	.choices__list--dropdown .choices__item {  
+		font-size: 14px;
+	}
+
+	.choices__inner {
+		font-size: 14px;
+	}
+
+	.choices__list--single {
+		padding: 0;
+	}
+}
+
+@media (max-width: 738px) {
+	.choices__list--dropdown .choices__item {  
+		font-size: 12px;
+	}
+
+	.choices__inner {
+		font-size: 12px;
+	}
 }

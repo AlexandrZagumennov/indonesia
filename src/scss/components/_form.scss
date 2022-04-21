@@ -22,7 +22,6 @@
 	gap: 30px;
 }
 
-
 .form__selects-container {
 	display: flex;
 	justify-content: space-between;
@@ -41,14 +40,12 @@
 	cursor: pointer;
 }
 
-
-
 .form__label {
 	display: block;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 130%;
-	margin-bottom: 12px;
+	margin-bottom: 9px;
 }
 
 .form__input {
@@ -62,24 +59,6 @@
 	outline: none;
 	width: 100%;
 	cursor: pointer;
-}
-
-.form__input_select {
-	max-width: 140px;
-	min-height: 42px;
-}
-
-.form__fieldset_date {
-	position: relative;
-}
-
-.form__fieldset_person {
-	position: relative;
-}
-.form__fieldset_options {
-	position: relative;
-}
-.form__personal-data-container {
 }
 
 .fieldset__full-name {
@@ -98,18 +77,9 @@
 	min-height: 99px;
 }
 
-.fieldset__email {
-}
-.fieldset__phone {
-}
-
-
 .form__booking-container {
 	display: flex;
 	justify-content: space-between;
-}
-
-.form__booking-data-container {
 }
 
 .form__booking-data-value {
@@ -121,7 +91,6 @@
 	font-size: 20px;
 	line-height: 150%;
 }
-
 
 .form__btn {
 	width: 360px;
@@ -142,19 +111,124 @@
 	}
 }
 
-#form-arrow-btn-date,
-#form-arrow-btn-person,
-#form-arrow-btn-options {
-	position: absolute;
-	top:35px;
-	right: 16px;
+
+@media (max-width: 1200px) {
+	.form {
+		padding: 60px 80px 69px 80px;
+	}
+
+	.form__title {
+		font-size: 30px;
+	}
+
+	.form__btn {
+		width: 299px;
+		height: 63px;
+	}
 }
 
-.form__select {
+@media (max-width: 1000px) {
+	.form {
+		padding: 40px 60px;
+	}
 
+	.form__title {
+		font-size: 20px;
+		line-height: 150%;
+		margin-bottom: 40px;
+	}
+
+	.form__btn {
+		width: 220px;
+		height: 45px;
+	}
+
+	.form__selects-item {
+		width: 170px;
+	}
+
+	.form__label {
+		font-size: 14px;
+	}
+
+	.fieldset__full-name {
+		margin-bottom: 24px;
+	}
+
+	.fieldset__email, .fieldset__phone {
+		width: 280px;
+		min-height: 83px;
+	}
+
+	.form__booking-data-value {
+		margin-bottom: 18px;
+		font-size: 14px;
+		line-height: 150%;
+	}
+
+	.form__booking-price {
+		font-size: 18px;
+	}
 }
 
-.form__option {
+@media (max-width: 738px) {
+	.form {
+		padding: 20px 10px 25px 10px;
+	}
 
+	.form__title {
+		font-size: 16px;
+		margin-bottom: 25px;
+	}
+
+	.form__btn {
+		width: 151px;
+		height: 34px;
+		margin: 0 auto;
+	}
+
+	.form__container {
+		gap: 15px;
+	}
+
+	.form__selects-container {
+		flex-direction: column;
+		gap: 15px;
+		width: 515px;
+		margin: 0 auto;
+	}
+
+	.form__label {
+		font-size: 12px;
+	}
+
+	.form__selects-item {
+		width: 100%;
+		min-height: 86px;
+	}
+
+	.form__communication-container {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.fieldset__full-name {
+		margin-bottom: 15px;
+		min-height: 70px;
+	}
+
+	.form__booking-container {
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	.form__booking-data-value {
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+
+	.fieldset__email, .fieldset__phone {
+		width: 100%;
+		min-height: 70px;
+	}
 }
-

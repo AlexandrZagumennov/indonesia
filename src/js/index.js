@@ -3,6 +3,7 @@ import {swipers} from './sliders.js';
 import {acc} from './acc.js';
 import {calc} from './calc.js';
 import {choices} from './choices.js';
+import {form} from './form.js';
 
 
 burger();
@@ -10,4 +11,5 @@ swipers();
 acc();
 calc();
 choices();
+form();
 
