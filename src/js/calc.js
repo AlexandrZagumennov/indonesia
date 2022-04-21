@@ -404,34 +404,6 @@ const calc = () => {
 				totalCostBtn.innerHTML = `${resultTotalCost.toLocaleString()} P`;
 			} 	
 		});
-
-
-	/* Калькулятор в форме ОС */
-	const formArrowBtn = document.querySelectorAll('.form__arrow-btn');
-	const dateListForm = document.querySelector('.form__date-list');
-
-	
-	// Функция открытия списка дат
-	
-	formArrowBtn.forEach(btn => {
-
-		btn.addEventListener('click', (event) => {
-			event.preventDefault();
-
-			if (event.target.id === 'form-arrow-btn-date') {
-				console.log('form-arrow-btn-date')
-				dateListForm.classList.add('form__date-list_active');
-			} else if (event.target.id === 'form-arrow-btn-person') {
-				console.log('form-arrow-btn-person')
-			} else if (event.target.id === 'form-arrow-btn-options') {
-				console.log('form-arrow-btn-options')
-			}
-		})
-	})
-
-
 };
 
 export {calc};
-
-//! Сделай закрытие по стрелочкам вниз
