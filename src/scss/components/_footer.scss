@@ -125,7 +125,7 @@
 	display: flex;
 	align-items: center;
 	width: 400px;
-	min-height: 62px;
+	height: 62px;
 }
 
 .footer__label {
@@ -157,14 +157,14 @@
 
 .footer__btn {
 	width: 100px;
-	min-height: 62px;
-	padding: 0;
+	height: 62px;
 	background: {
-	position: center;
-	repeat: no-repeat;
-	image: url("../img/footer/footer-btn-arrow.png");
-	size: 35px 35px;
-}
+		position: center;
+		repeat: no-repeat;
+		image: url("../img/footer/footer-btn-arrow.png");
+		size: 35px 35px;
+	}
+
 
 	&:hover,
 	&:focus,
