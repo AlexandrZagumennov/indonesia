@@ -37,13 +37,13 @@
 
 				<nav class="header__navigation navigation">
 					<ul class="navigation__list">
-						<li class="navigation__list-item"><a href="#" class="navigation__link">Индонезия</a></li>
-						<li class="navigation__list-item"><a href="#" class="navigation__link">Путешествие</a></li>
-						<li class="navigation__list-item"><a href="#" class="navigation__link">Тур 14 дней</a></li>
-						<li class="navigation__list-item"><a href="#" class="navigation__link">Почему мы?</a></li>
-						<li class="navigation__list-item"><a href="#" class="navigation__link">Фотоальбом</a></li>
-						<li class="navigation__list-item"><a href="#" class="navigation__link">Бронирование</a></li>
-						<li class="navigation__list-item"><a href="#" class="navigation__link">Контакты</a></li>
+						<li class="navigation__list-item"><a href="#indonesia" class="navigation__link">Индонезия</a></li>
+						<li class="navigation__list-item"><a href="#journey" class="navigation__link">Путешествие</a></li>
+						<li class="navigation__list-item"><a href="#calc" class="navigation__link">Тур 14 дней</a></li>
+						<li class="navigation__list-item"><a href="#why" class="navigation__link">Почему мы?</a></li>
+						<li class="navigation__list-item"><a href="#photo" class="navigation__link">Фотоальбом</a></li>
+						<li class="navigation__list-item"><a href="#booking" class="navigation__link">Бронирование</a></li>
+						<li class="navigation__list-item"><a href="#footer" class="navigation__link">Контакты</a></li>
 					</ul>
 				</nav>
 
@@ -63,13 +63,13 @@
 					<p>Вы точно запомните этот отдых навсегда.</p>
 				</div>
 
-				<a href="" class="hero__btn btn">Забронировать</a>
+				<a href="#booking" class="hero__btn btn">Забронировать</a>
 			</div>
 		</div>
 	</section>
 
 	<main>
-		<section class="indonesia">
+		<section class="indonesia" id="indonesia">
 			<div class="container">
 				<div class="indonesia__grid-wrapper">
 					<div class="indonesia__content-wrapper">
@@ -81,7 +81,6 @@
 							и дождевые леса Калимантана.</p>
 					</div>
 					
-
 					<div class="indonesia__slider swiper">
 						<ul class="indonesia__slider-list swiper-wrapper">
 							<li class="indonesia__slide swiper-slide">
@@ -107,7 +106,6 @@
 
 						<div class="swiper-pagination indonesia__slider-pagination"></div>
 					</div>
-
 					
 					<div class="indonesia__ill indonesia__ill_1"></div>
 					<div class="indonesia__ill indonesia__ill_2"></div>
@@ -120,7 +118,7 @@
 			</div>
 		</section>
 
-		<section class="journey">
+		<section class="journey" id="journey">
 			<div class="container">
 				<h3 class="section__title journey__title">Путешествие</h3>
 				<p class="section__description journey__description">Посети это удивительное место, а мы покажем самые фантастические места.</p>
@@ -195,7 +193,7 @@
 			</div>
 		</section>
 
-		<section class="calc">
+		<section class="calc" id="calc">
 			<div class="container">
 				<div class="calc__main-container">
 					<div class="calc__content-wrapper">
@@ -278,7 +276,7 @@
 			</div>
 		</section>
 
-		<section class="why">
+		<section class="why" id="why">
 			<div class="container">
 				<h3 class="section__title why__title">Почему мы?</h3>
 				<p class="section__description why__description">Мы знаем, как сделать ваше путешествие незабываемым.</p>
@@ -318,7 +316,7 @@
 			</div>
 		</section>
 
-		<section class="photo">
+		<section class="photo" id="photo">
 			<div class="container">
 				<h3 class="section__title photo__title">Фотоальбом</h3>
 				<p class="section__description photo__description">За годы поездок у нас накопилось много фотографий из Индонезии. Представляем их вам.</p>
@@ -387,7 +385,7 @@
 				</div>
 		</section>
 
-		<section class="booking">
+		<section class="booking" id="booking">
 			<div class="container">
 				<form action="https://jsonplaceholder.typicode.com/todos" method="POST" class="booking__form form">
 					<h3 class="form__title">Бронирование тура</h3>
@@ -475,15 +473,13 @@
 
 							<button class="btn form__btn">Забронировать</button>
 						</div>
-
-
 					</div>
 				</form>
 			</div>
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="footer__grid-wrapper">
 				<img src="img/sprite.svg#logo" alt="Логотип туристического агетнста Indo Travel" class="footer__logo logo" width="176" height="34">
@@ -492,31 +488,31 @@
 					<h4 class="footer__title">Меню</h4>
 					<ul class="footer__list">
 						<li class="footer__item">
-							<a href="#" class="footer__link section__text">Индонезия</a>
+							<a href="#indonesia" class="footer__link section__text">Индонезия</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link section__text">Путешествие</a>
+							<a href="#journey" class="footer__link section__text">Путешествие</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link section__text">Тур 14 дней</a>
+							<a href="#calc" class="footer__link section__text">Тур 14 дней</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link section__text">Почему мы?</a>
+							<a href="#why" class="footer__link section__text">Почему мы?</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link section__text">Фотоальбом</a>
+							<a href="#photo" class="footer__link section__text">Фотоальбом</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link section__text">Бронирование</a>
+							<a href="#booking" class="footer__link section__text">Бронирование</a>
 						</li>
 
 						<li class="footer__item">
-							<a href="#" class="footer__link section__text">Контакты</a>
+							<a href="#footer" class="footer__link section__text">Контакты</a>
 						</li>
 					</ul>
 				</div>

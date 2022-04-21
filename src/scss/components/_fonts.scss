@@ -6,7 +6,6 @@
 	@include font (Nunito, 300)
 }
 
-
 @font-face {
 	@include font (Nunito, 600)
 }
@@ -23,9 +22,3 @@
 	@include font (Merriweather, 400)
 }
 
-//@font-face {
-//    font-family: 'Nunito';
-//    src: local('Nunito ExtraLight Italic'), local('Nunito-ExtraLightItalic'), url('../fonts/Nunito/Nunito-200.woff2') format('woff2'), url('../fonts/Nunito/Nunito-200.woff') format('woff');
-//    font-weight: 200;
-//    font-style: italic;
-//}
