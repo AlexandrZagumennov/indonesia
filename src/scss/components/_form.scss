@@ -40,6 +40,14 @@
 	cursor: pointer;
 }
 
+.form__fieldset-hover {
+	border: 1px solid $color-3;
+}
+
+.form__fieldset-focus {
+	border: 1px solid $color-3-focus;
+}
+
 .form__label {
 	display: block;
 	font-weight: 700;

@@ -4,6 +4,7 @@ import {acc} from './acc.js';
 import {calc} from './calc.js';
 import {choices} from './choices.js';
 import {scroll} from './scroll.js';
+import {form} from	'./form.js';
 
 
 burger();
@@ -12,4 +13,5 @@ acc();
 calc();
 choices();
 scroll();
+form();
 
