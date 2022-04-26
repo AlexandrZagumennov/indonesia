@@ -102,6 +102,7 @@
 
 .form__btn {
 	width: 360px;
+	margin-left:auto;
 }
 
 .form__arrow-btn {
@@ -238,5 +239,15 @@
 	.fieldset__email, .fieldset__phone {
 		width: 100%;
 		min-height: 70px;
+	}
+}
+
+@media (max-width: 576px) {
+	.form__selects-container {
+		width: 248px;
+	}
+
+	.form__fieldset {
+		padding: 8px 15px;
 	}
 }
