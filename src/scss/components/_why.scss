@@ -31,6 +31,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		z-index: -1;
 	}
 
 	&::after {
@@ -40,6 +41,7 @@
 		position: absolute;
 		top: 7px;
 		left: 17px;
+		z-index: -1;
 		background: {
 			size: cover;
 			repeat: no-repeat;
